@@ -34,10 +34,12 @@ namespace pascaglassia
 
         static void Main(string[] args)
         {
-            //String Repeat = "Y";
-            //while (Repeat == "Y" || Repeat == "y")
-            //{
-                //Clear the console window
+            String Repeat = "Y";
+            while (Repeat == "Y" || Repeat == "y")
+            {
+
+
+                //Clear the Console Window
                 Console.Clear();
 
 
@@ -66,7 +68,7 @@ namespace pascaglassia
 
 
                 //INPUT DARI USER
-                Console.WriteLine(" Your name please . . .");
+                Console.WriteLine("Your name please . . .");
                 Name = Console.ReadLine();
                 NewLine();
 
@@ -88,10 +90,10 @@ namespace pascaglassia
                 }
                 catch (Exception x)
                 {
-                    Console.WriteLine("Oopss... Much Error, Such WOW... \n Here's your error Massages: \n" + "-" +  x.Message + "-" + "\n \n Its okay, Press Enter and try again ...");
+                    Console.WriteLine("Oopss... Much Error, Such WOW... \n Here's your error Massages: \n" + "-" + x.Message + "-" + "\n \n Its okay, Press Enter and try again ...");
                     Console.ReadKey();
                     System.Environment.Exit(1);
-            }
+                }
 
                 //INFORMASI ZODIAK
                 Console.WriteLine("THANK YOU!!! ^,^");
@@ -110,200 +112,203 @@ namespace pascaglassia
                 var age = Today.Year - Tanggal.Year;
 
 
-            //Check BULAN then TANGGAL to menentukan Zodiak menggunakan SWITCH CASE.
-            //switch (Tanggal.Month)
-            //{
+                //Check BULAN then TANGGAL to menentukan Zodiak menggunakan SWITCH CASE.
 
-            //    case 1:
-            //        if (Tanggal.Day <= 20)
-            //        { Console.WriteLine("Zodiak mu adalah Capricorn"); Zodiak = "Capricorn"; }
-            //        else
-            //        { Console.WriteLine("Zodiak mu adalah Aquarius"); Zodiak = "Aquarius"; }
-            //        break;
+                //switch (Tanggal.Month)
+                //{
 
-            //    case 2:
-            //        if (Tanggal.Day <= 19)
-            //        { Console.WriteLine("Zodiak mu adalah Aquarius"); Zodiak = "Aquarius"; }
-            //        else
-            //        { Console.WriteLine("Zodiak mu adalah Pisces"); Zodiak = "Pisces"; }
-            //        break;
+                //    case 1:
+                //        if (Tanggal.Day <= 20)
+                //        { Console.WriteLine("Your Zodiak were Capricorn"); Zodiak = "Capricorn"; }
+                //        else
+                //        { Console.WriteLine("Your Zodiak were Aquarius"); Zodiak = "Aquarius"; }
+                //        break;
 
-            //    case 3:
-            //        if (Tanggal.Day <= 21)
-            //        { Console.WriteLine("Zodiak mu adalah Pisces"); Zodiak = "Pisces"; }
-            //        else
-            //        { Console.WriteLine("Zodiak mu adalah Aries"); Zodiak = "Aries"; }
-            //        break;
+                //    case 2:
+                //        if (Tanggal.Day <= 19)
+                //        { Console.WriteLine("Your Zodiak were Aquarius"); Zodiak = "Aquarius"; }
+                //        else
+                //        { Console.WriteLine("Your Zodiak were Pisces"); Zodiak = "Pisces"; }
+                //        break;
 
-            //    case 4:
-            //        if (Tanggal.Day <= 19)
-            //        { Console.WriteLine("Zodiak mu adalah Aries"); Zodiak = "Aries"; }
-            //        else
-            //        { Console.WriteLine("Zodiak mu adalah Taurus"); Zodiak = "Taurus"; }
-            //        break;
+                //    case 3:
+                //        if (Tanggal.Day <= 21)
+                //        { Console.WriteLine("Your Zodiak were Pisces"); Zodiak = "Pisces"; }
+                //        else
+                //        { Console.WriteLine("Your Zodiak were Aries"); Zodiak = "Aries"; }
+                //        break;
 
-            //    case 5:
-            //        if (Tanggal.Day <= 20)
-            //        { Console.WriteLine("Zodiak mu adalah Taurus"); Zodiak = "Taurus"; }
-            //        else
-            //        { Console.WriteLine("Zodiak mu adalah Gemini"); Zodiak = "Gemini"; }
-            //        break;
+                //    case 4:
+                //        if (Tanggal.Day <= 19)
+                //        { Console.WriteLine("Your Zodiak were Aries"); Zodiak = "Aries"; }
+                //        else
+                //        { Console.WriteLine("Your Zodiak were Taurus"); Zodiak = "Taurus"; }
+                //        break;
 
-            //    case 6:
-            //        if (Tanggal.Day <= 21)
-            //        { Console.WriteLine("Zodiak mu adalah Gemini"); Zodiak = "Gemini"; }
-            //        else
-            //        { Console.WriteLine("Zodiak mu adalah Cancer"); Zodiak = "Cancer"; }
-            //        break;
+                //    case 5:
+                //        if (Tanggal.Day <= 20)
+                //        { Console.WriteLine("Your Zodiak were Taurus"); Zodiak = "Taurus"; }
+                //        else
+                //        { Console.WriteLine("Your Zodiak were Gemini"); Zodiak = "Gemini"; }
+                //        break;
 
-            //    case 7:
-            //        if (Tanggal.Day <= 22)
-            //        { Console.WriteLine("Zodiak mu adalah Cancer"); Zodiak = "Gemini"; }
-            //        else
-            //        { Console.WriteLine("Zodiak mu adalah Leo"); Zodiak = "LEO"; }
-            //        break;
+                //    case 6:
+                //        if (Tanggal.Day <= 21)
+                //        { Console.WriteLine("Your Zodiak were Gemini"); Zodiak = "Gemini"; }
+                //        else
+                //        { Console.WriteLine("Your Zodiak were Cancer"); Zodiak = "Cancer"; }
+                //        break;
+
+                //    case 7:
+                //        if (Tanggal.Day <= 22)
+                //        { Console.WriteLine("Your Zodiak were Cancer"); Zodiak = "Gemini"; }
+                //        else
+                //        { Console.WriteLine("Your Zodiak were Leo"); Zodiak = "LEO"; }
+                //        break;
 
 
-            //    case 8:
-            //        if (Tanggal.Day <= 23)
-            //        { Console.WriteLine("Zodiak mu adalah Leo"); Zodiak = "LEO"; }
-            //        else
-            //        { Console.WriteLine("Zodiak mu adalah Virgo"); Zodiak = "Virgo"; }
-            //        break;
+                //    case 8:
+                //        if (Tanggal.Day <= 23)
+                //        { Console.WriteLine("Your Zodiak were Leo"); Zodiak = "LEO"; }
+                //        else
+                //        { Console.WriteLine("Your Zodiak were Virgo"); Zodiak = "Virgo"; }
+                //        break;
 
-            //    case 9:
-            //        if (Tanggal.Day <= 22)
-            //        { Console.WriteLine("Zodiak mu adalah Virgo"); Zodiak = "Virgo"; }
-            //        else
-            //        { Console.WriteLine("Zodiak mu adalah Libra"); Zodiak = "Libra"; }
-            //        break;
+                //    case 9:
+                //        if (Tanggal.Day <= 22)
+                //        { Console.WriteLine("Your Zodiak were Virgo"); Zodiak = "Virgo"; }
+                //        else
+                //        { Console.WriteLine("Your Zodiak were Libra"); Zodiak = "Libra"; }
+                //        break;
 
-            //    case 10:
-            //        if (Tanggal.Day <= 23)
-            //        { Console.WriteLine("Zodiak mu adalah Libra"); Zodiak = "Libra"; }
-            //        else
-            //        { Console.WriteLine("Zodiak mu adalah Scorpio"); Zodiak = "Scorpio"; }
-            //        break;
+                //    case 10:
+                //        if (Tanggal.Day <= 23)
+                //        { Console.WriteLine("Your Zodiak were Libra"); Zodiak = "Libra"; }
+                //        else
+                //        { Console.WriteLine("Your Zodiak were Scorpio"); Zodiak = "Scorpio"; }
+                //        break;
 
-            //    case 11:
-            //        if (Tanggal.Day <= 22)
-            //        { Console.WriteLine("Zodiak mu adalah Scorpio"); Zodiak = "Scorpio"; }
-            //        else
-            //        { Console.WriteLine("Zodiak mu adalah Sagitarius"); Zodiak = "Sagitarius"; }
-            //        break;
+                //    case 11:
+                //        if (Tanggal.Day <= 22)
+                //        { Console.WriteLine("Your Zodiak were Scorpio"); Zodiak = "Scorpio"; }
+                //        else
+                //        { Console.WriteLine("Your Zodiak were Sagitarius"); Zodiak = "Sagitarius"; }
+                //        break;
 
-            //    case 12:
-            //        if (Tanggal.Day <= 21)
-            //        { Console.WriteLine("Zodiak mu adalah Sagitarius"); Zodiak = "Sagitarius"; }
-            //        else
-            //        { Console.WriteLine("Zodiak mu adalah Capricorn"); Zodiak = "Capricorn"; }
-            //        break;
+                //    case 12:
+                //        if (Tanggal.Day <= 21)
+                //        { Console.WriteLine("Your Zodiak were Sagitarius"); Zodiak = "Sagitarius"; }
+                //        else
+                //        { Console.WriteLine("Your Zodiak were Capricorn"); Zodiak = "Capricorn"; }
+                //        break;
 
-            //    default:
-            //        Console.WriteLine("Sepertinya ada yang salah dengan hidup mu, zodiac nya ga ketemu :((");
-            //        break;
+                //    default:
+                //        Console.WriteLine("Sepertinya ada yang salah dengan hidup mu, zodiac nya ga ketemu :((");
+                //        break;
 
-            //}
+                //}
 
-            String Zodiak = "";
+                //Check BULAN then TANGGAL to menentukan Zodiak menggunakan IF ELSE.
 
-            if (Tanggal.Month == 1)
+                String Zodiak = "";
+
+                if (Tanggal.Month == 1)
                 {
                     if (Tanggal.Day <= 20)
-                    { Console.WriteLine("Zodiak mu adalah Capricorn"); Zodiak = "Capricorn"; }
+                    { Console.WriteLine("Your Zodiak were Capricorn"); Zodiak = "Capricorn"; }
                     else
-                    { Console.WriteLine("Zodiak mu adalah Aquarius"); Zodiak = "Aquarius"; }
+                    { Console.WriteLine("Your Zodiak were Aquarius"); Zodiak = "Aquarius"; }
                 }
 
                 else if (Tanggal.Month == 2)
                 {
                     if (Tanggal.Day <= 19)
-                    { Console.WriteLine("Zodiak mu adalah Aquarius"); Zodiak = "Aquarius"; }
+                    { Console.WriteLine("Your Zodiak were Aquarius"); Zodiak = "Aquarius"; }
                     else
-                    { Console.WriteLine("Zodiak mu adalah Pisces"); Zodiak = "Pisces"; }
+                    { Console.WriteLine("Your Zodiak were Pisces"); Zodiak = "Pisces"; }
                 }
 
                 else if (Tanggal.Month == 3)
                 {
                     if (Tanggal.Day <= 21)
-                    { Console.WriteLine("Zodiak mu adalah Pisces"); Zodiak = "Pisces"; }
+                    { Console.WriteLine("Your Zodiak were Pisces"); Zodiak = "Pisces"; }
                     else
-                    { Console.WriteLine("Zodiak mu adalah Aries"); Zodiak = "Aries"; }
+                    { Console.WriteLine("Your Zodiak were Aries"); Zodiak = "Aries"; }
                 }
 
                 else if (Tanggal.Month == 4)
                 {
                     if (Tanggal.Day <= 19)
-                    { Console.WriteLine("Zodiak mu adalah Aries"); Zodiak = "Aries"; }
+                    { Console.WriteLine("Your Zodiak were Aries"); Zodiak = "Aries"; }
                     else
-                    { Console.WriteLine("Zodiak mu adalah Taurus"); Zodiak = "Taurus"; }
+                    { Console.WriteLine("Your Zodiak were Taurus"); Zodiak = "Taurus"; }
                 }
 
                 else if (Tanggal.Month == 5)
                 {
                     if (Tanggal.Day <= 20)
                     {
-                    Console.WriteLine("Zodiak mu adalah Taurus");
-                    Zodiak = "Taurus";
-                }
+                        Console.WriteLine("Your Zodiak were Taurus");
+                        Zodiak = "Taurus";
+                    }
                     else
-                    { Console.WriteLine("Zodiak mu adalah Gemini"); Zodiak = "Gemini"; }
+                    { Console.WriteLine("Your Zodiak were Gemini"); Zodiak = "Gemini"; }
                 }
 
                 else if (Tanggal.Month == 6)
                 {
                     if (Tanggal.Day <= 21)
-                    { Console.WriteLine("Zodiak mu adalah Gemini"); Zodiak = "Gemini"; }
+                    { Console.WriteLine("Your Zodiak were Gemini"); Zodiak = "Gemini"; }
                     else
-                    { Console.WriteLine("Zodiak mu adalah Cancer"); Zodiak = "Cancer"; }
+                    { Console.WriteLine("Your Zodiak were Cancer"); Zodiak = "Cancer"; }
                 }
 
                 else if (Tanggal.Month == 7)
                 {
                     if (Tanggal.Day <= 22)
-                    { Console.WriteLine("Zodiak mu adalah Cancer"); Zodiak = "Gemini"; }
+                    { Console.WriteLine("Your Zodiak were Cancer"); Zodiak = "Gemini"; }
                     else
-                    { Console.WriteLine("Zodiak mu adalah Leo"); Zodiak = "LEO"; }
+                    { Console.WriteLine("Your Zodiak were Leo"); Zodiak = "LEO"; }
                 }
 
                 else if (Tanggal.Month == 8)
                 {
                     if (Tanggal.Day <= 23)
-                    { Console.WriteLine("Zodiak mu adalah Leo"); Zodiak = "LEO"; }
+                    { Console.WriteLine("Your Zodiak were Leo"); Zodiak = "LEO"; }
                     else
-                    { Console.WriteLine("Zodiak mu adalah Virgo"); Zodiak = "Virgo"; }
+                    { Console.WriteLine("Your Zodiak were Virgo"); Zodiak = "Virgo"; }
                 }
 
                 else if (Tanggal.Month == 9)
                 {
                     if (Tanggal.Day <= 22)
-                    { Console.WriteLine("Zodiak mu adalah Virgo"); Zodiak = "Virgo"; }
+                    { Console.WriteLine("Your Zodiak were Virgo"); Zodiak = "Virgo"; }
                     else
-                    { Console.WriteLine("Zodiak mu adalah Libra"); Zodiak = "Libra"; }
+                    { Console.WriteLine("Your Zodiak were Libra"); Zodiak = "Libra"; }
                 }
 
                 else if (Tanggal.Month == 10)
                 {
                     if (Tanggal.Day <= 23)
-                    { Console.WriteLine("Zodiak mu adalah Libra"); Zodiak = "Libra"; }
+                    { Console.WriteLine("Your Zodiak were Libra"); Zodiak = "Libra"; }
                     else
-                    { Console.WriteLine("Zodiak mu adalah Scorpio"); Zodiak = "Scorpio"; }
+                    { Console.WriteLine("Your Zodiak were Scorpio"); Zodiak = "Scorpio"; }
                 }
 
                 else if (Tanggal.Month == 11)
                 {
                     if (Tanggal.Day <= 22)
-                    { Console.WriteLine("Zodiak mu adalah Scorpio"); Zodiak = "Scorpio"; }
+                    { Console.WriteLine("Your Zodiak were Scorpio"); Zodiak = "Scorpio"; }
                     else
-                    { Console.WriteLine("Zodiak mu adalah Sagitarius"); Zodiak = "Sagitarius"; }
+                    { Console.WriteLine("Your Zodiak were Sagitarius"); Zodiak = "Sagitarius"; }
                 }
 
                 else if (Tanggal.Month == 12)
                 {
                     if (Tanggal.Day <= 21)
-                    { Console.WriteLine("Zodiak mu adalah Sagitarius"); Zodiak = "Sagitarius"; }
+                    { Console.WriteLine("Your Zodiak were Sagitarius"); Zodiak = "Sagitarius"; }
                     else
-                    { Console.WriteLine("Zodiak mu adalah Capricorn"); Zodiak = "Capricorn"; }
+                    { Console.WriteLine("Your Zodiak were Capricorn"); Zodiak = "Capricorn"; }
                 }
 
                 else
@@ -311,34 +316,52 @@ namespace pascaglassia
                     Console.WriteLine("Sepertinya ada yang salah dengan hidup mu, zodiac nya ga ketemu :((");
                 }
 
-                Console.WriteLine("Press Enter to See Your Details . . .");
+                //Sepparator
+                Console.WriteLine("\n\nPress Enter to See Your Details . . .");
                 Console.ReadLine();
                 Console.Clear();
-
-
                 DrawLine();
 
 
                 //INSERT THE INPUT To Database
                 List<Database> DB = new List<Database>()
-            {
-                new Database {Nama = Name, Sex = Gender, Umur = age, Zodiac = Zodiak},
-                new Database {Nama = "Angela", Sex = "Girl", Umur = 16, Zodiac = "Cancer"},
-                new Database {Nama = "Langit", Sex = "Boy", Umur = 14, Zodiac = "Gemini"},
-                new Database {Nama = "Gaby", Sex = "Woman", Umur = 23, Zodiac = "Aries"},
-                new Database {Nama = "Aura", Sex = "Woman", Umur = 22, Zodiac = "Leo"},
-                new Database {Nama = "Jacob", Sex = "Man", Umur = 24 , Zodiac = "Cancer"}
-            };
+                {
+                    new Database {Nama = Name, Sex = Gender, Umur = age, Zodiac = Zodiak},
+                    new Database {Nama = "Angela", Sex = "Girl", Umur = 16, Zodiac = "Cancer"},
+                    new Database {Nama = "Langit", Sex = "Boy", Umur = 14, Zodiac = "Gemini"},
+                    new Database {Nama = "Gaby", Sex = "Woman", Umur = 23, Zodiac = "Aries"},
+                    new Database {Nama = "Aura", Sex = "Woman", Umur = 22, Zodiac = "Leo"},
+                    new Database {Nama = "Jacob", Sex = "Man", Umur = 24 , Zodiac = "Cancer"}
+                    };
+
+
+                //Conditional sesuai gender
+                string Panggilan;
+                string Panggilan2;
+                string Panggilan3;
+                if (Gender.ToLower() == "man" || Gender.ToLower() == "boy")
+                {
+                    Panggilan = "he";
+                    Panggilan2 = "his";
+                    Panggilan3 = "prince";
+                }
+                else
+                {
+                    Panggilan = "she";
+                    Panggilan2 = "her";
+                    Panggilan3 = "princes";
+                }
+
 
 
                 //KOSMETIK ACTUALLT, for somethin~~~~
                 List<string> sumber = new List<string>()
-            {
-                "Ada seorang manusia, dengan Nama " + Name + ", dia berumur " + age + " tahun.",
-                "WATCHOUT!!! " + Name + " is coming!!! s/he is " + age + " years old!",
-                "Welcome " + Name + ", the " +age+ " years old virgin.",
-                "Hello " + Name + ", I see you were " + age + " yearse old. hmm . . . Interesting."
-            };
+                {
+                    //"Ada seorang manusia, dengan Nama " + Name + ", dia berumur " + age + " tahun, dan berzodiak " + Zodiak +".",
+                    "WATCHOUT!!! " + Name + " is coming!!! "+Panggilan+ " is " + age + " years old! and have " +Zodiak + " in "+Panggilan2+" back",
+                    "Welcome " + Panggilan3 +", Who posses the name of " + Name + ", the " +age+ " years old virgin " +Zodiak + ".",
+                    "Hello " + Name + ", I see you were a " + Panggilan3 + " " + Zodiak + " " + age + " years old. hmm . . . Interesting."
+                };
 
                 int l = sumber.Count;
                 Random r = new Random();
@@ -347,7 +370,8 @@ namespace pascaglassia
 
 
                 //OUTPUT Final~~~
-               
+
+                //See all data from DB
                 NewLine();
                 Console.WriteLine(Inirandom);
                 DrawLine();
@@ -355,33 +379,40 @@ namespace pascaglassia
                 Console.ReadLine();
                 Console.Clear();
 
-            foreach (var Output in DB)
-                Console.WriteLine("    Nama : " + Output.Nama + "\n    Gender : " + Output.Sex + "\n     Umur : " + Output.Umur + "\n Zodiak : " + Output.Zodiac + "\n \n");
+                foreach (var Output in DB)
+                {
+                    DrawLine();
+                    Console.WriteLine("Nama     : " + Output.Nama + "\nGender   : " + Output.Sex + "\nUmur     : " + Output.Umur + "\nZodiak   : " + Output.Zodiac + "\n \n");
+                }
+                DrawLine();
 
+                //Sepparator
                 Console.WriteLine("Press Enter to Continue . . .");
                 Console.ReadLine();
                 Console.Clear();
 
+
+                //See who's legal (17+)
                 Console.WriteLine("Press Enter to See Who's Legal . . .");
                 Console.ReadLine();
                 Console.Clear();
 
-            var xx = from apapun in DB where apapun.Umur > 17 select apapun;
-            foreach (var linq in xx)
-                Console.WriteLine(linq.Nama);
-
-                Console.WriteLine("Press Enter to EXIT . . .");
-                Console.ReadLine();
-                System.Environment.Exit(1);
+                var xx = from apapun in DB where apapun.Umur > 17 select apapun;
+                foreach (var linq in xx)
+                    Console.WriteLine(linq.Nama);
 
 
-            //}
-            //    Console.WriteLine("\nWould you like to enter another birthday? (y or n)");
-            //    Repeat = Console.ReadLine();
-            //    if (Repeat == "N" || Repeat == "n")
-            //    {
-            //        System.Environment.Exit(1);
-            //    }
+                //Last LINE. gonna exit
+                Console.WriteLine("\n\nWould you like to enter another Data?? (y or n)");
+                Repeat = Console.ReadLine();
+                if (Repeat == "N" || Repeat == "n")
+                {
+                    Console.WriteLine("thanks for using our services~~~");
+                    System.Environment.Exit(1);
+                }
+
+            }
+
         }
     }
 }
