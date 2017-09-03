@@ -34,7 +34,7 @@ namespace ZODIAK
 
                 //Menu, mungkin, nanti nya...
                 HelperClass.DrawStar();
-                Console.WriteLine("++" + DateTime.Today + "++");
+                Console.WriteLine("++" + DateTime.Now + "++");
                 HelperClass.DrawStar();
 
                 //Deklarasi
@@ -68,7 +68,7 @@ namespace ZODIAK
                 {
                     Console.WriteLine("Oopss... Much Error, Such WOW... \n Here's your error Massages: \n" + "-" + x.Message + "-" + "\n \n Its okay, Press Enter and try again ...");
                     Console.ReadKey();
-                    System.Environment.Exit(1);
+                    Repeat = "y";
                 }
 
                 //INFORMASI ZODIAK
@@ -376,7 +376,7 @@ namespace ZODIAK
 
                 var xx = from apapun in DB where apapun.Umur > 17 select apapun;
                 foreach (var linq in xx)
-                    Console.WriteLine(linq.Nama);
+                    Console.WriteLine($"{ linq.Nama } {linq.Umur} years old");
 
 
                 //Last LINE. gonna exit
